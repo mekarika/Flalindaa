@@ -1,0 +1,290 @@
+  body {
+      font-family: 'Times New Roman', serif; /* Более подходящий шрифт */
+      background: #fff;
+      color: #000;
+      margin: 0;  /* Убираем стандартные отступы */
+      padding: 0;
+      
+      }
+    /* Заголовок с вертикальным текстом */
+    .title-container {
+      display: flex;
+      gap: 30rem;
+      flex-wrap: wrap;
+      margin-bottom: 100px;
+      align-items: center;
+      position: relative; /* Важно для позиционирования кнопки */
+    }
+    .title-left {
+      font-weight: 700;
+      font-size: 2rem;
+      line-height: 1.1;
+      letter-spacing: 0.05em;
+      position: relative;
+      max-width: 220px;
+    }
+    .title-left span {
+      display: block;
+    }
+    .vertical-text {
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      font-weight: 400;
+      font-size: 1rem;
+      opacity: 0.5;
+      position: absolute;
+      top: 0;
+      right: -40px;
+      user-select: none;
+    }
+    .title-right {
+      flex-grow: 1;
+      max-width: 400px;
+      position: relative;
+    }
+    .title-right img {
+      width: 100%;
+      border-radius: 0.3rem;
+      box-shadow: 0 0 8px rgb(0 0 0 / 0.1);
+    }
+    .title-right img.second {
+      position: absolute;
+      top: 2px;
+      left: 200px;
+      width: 100%;
+      filter: brightness(0.3);
+      border-radius: 0.3rem;
+      z-index: -1;
+    }
+    /* Галерея коллекций */
+    .collection-gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.collection-gallery > div {
+  display: flex;
+  justify-content: center;
+ align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.collection-gallery > div img {
+  height: 500px;
+  object-fit: cover;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.collection-gallery > div img.malenkie {
+  width: 200px;
+  height: 300px;
+}
+
+.collection-gallery > div img.srednie {
+  width: 250px;
+  height: 400px;
+}
+
+.collection-gallery > div img:hover {
+  transform: scale(1.05);
+}
+    /* Кнопки */
+    .btn-outline-custom {
+      border: 1px solid #000;
+      background: transparent;
+      color: #000;
+      font-weight: 600;
+      padding: 0.375rem 1.5rem;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .btn-outline-custom:hover {
+      background-color: #000;
+      color: #fff;
+    }
+    /* Блок "О нас" и формы */
+    .info-box {
+      border: 1px solid #000;
+      padding: 1.5rem;
+      max-width: 700px;
+      margin: 3rem auto;
+      font-size: 1rem;
+      line-height: 1.5;
+      text-align: center;
+    }
+    .form-section {
+      max-width: 700px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+    .form-section label {
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.25rem;
+      display: block;
+    }
+    .form-section input {
+      border: 1px solid #000;
+      border-radius: 0.25rem;
+      padding: 0.5rem;
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+    .form-section button {
+      width: 100%;
+      padding: 0.5rem;
+      font-weight: 700;
+    }
+
+    /* Мобильная адаптивность */
+    @media (max-width: 768px) {
+      .title-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .title-left {
+        max-width: 100%;
+        font-size: 2.5rem;
+        text-align: center;
+        position: static;
+      }
+      .vertical-text {
+        position: static;
+        writing-mode: horizontal-tb;
+        opacity: 0.7;
+        margin-top: 0.5rem;
+        right: auto;
+        user-select: none;
+      }
+      .title-right {
+        max-width: 100%;
+        position: static;
+        margin-top: 1rem;
+      }
+      .title-right img.second {
+        display: none;
+      }
+      .collection-gallery > div img {
+        max-width: 120px;
+      }
+    }
+    .collection-area {
+  position: relative; /* Важно для позиционирования кнопки */
+  /* Добавьте ширину, если нужно ограничить ширину всего блока */
+}
+
+.order-button {
+  position: absolute;
+  bottom: 20px; /* Примерное расстояние от низа, подберите точное значение */
+  left: 10%;
+  right: 0;/* Выравнивание по центру */
+  transform: translateX(-50%); /* Сдвигаем кнопку влево на половину ширины */
+  background-color: transparent; /* Прозрачный фон */
+  color: #000; /* Черный цвет текста */
+  top: 100%;
+  padding: 10px 20px; /* Примерные отступы, подберите точные значения */
+  border: 1px solid #000; /* Тонкая черная рамка */
+  cursor: pointer;
+  font-family: sans-serif; /* Или другой шрифт, соответствующий дизайну */
+  font-size: 12px; /* Примерный размер шрифта, подберите точный */
+  letter-spacing: 2px; /* Примерное межбуквенное расстояние, подберите точное */
+  text-transform: uppercase; /* Все буквы заглавные */
+  /* Добавьте другие стили по вкусу */
+  transition: all 0.3s ease; /* Плавная анимация при наведении */
+  width: 200px;
+  height: 50px;
+}
+
+.order-button:hover {
+  background-color: #000; /* Черный фон при наведении */
+  color: #fff; /* Белый текст при наведении */
+}
+
+/* Если есть background.jpg: */
+.collection-area {
+  background-image: url('background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover; /* Или другие значения, чтобы корректно отобразить фон */
+}
+
+.modal { /* Стили для всего модального окна (фон, позиционирование) */
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content { /* Стили для содержимого окна (фон, отступы, граница) */
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+}
+
+.close { /* Стили для кнопки закрытия */
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Дополнительные стили для формы (поля, кнопки и т.д.) */
+#orderForm label { /* Стили для label в форме */
+  display: block;
+  margin-bottom: 5px;
+}
+
+#orderForm input[type="text"], /* Стили для текстовых полей */
+#orderForm input[type="tel"],
+#orderForm input[type="email"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#orderForm button[type="submit"] { /* Стили для кнопки отправки */
+  background-color: #ffffff;
+  color: black;
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#orderForm button[type="submit"]:hover { /* Стили при наведении на кнопку */
+  background-color: black;
+  color: white;
+}
+
+
+
+/*спасибо*/
+
+        

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Falinda - Новая коллекция</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container py-4">
+
+    <!-- Навигация -->
+    <nav class="d-flex justify-content-between align-items-center mb-5">
+      <div>
+        <a href="#" class="text-decoration-none text-dark mx-4 fw-semibold" style="font-size: 20px;">Главная</a>
+        <a href="#" class="text-decoration-none text-dark mx-4 fw-semibold" style="font-size: 20px;">Весна 2026</a>
+        <a href="#" class="text-decoration-none text-dark mx-4 fw-semibold" style="font-size: 20px;">Осень 2026</a>
+      </div>
+      <div class="fw-bold fs-3">FALINDA</div>
+      <div>
+        <a href="#" class="text-decoration-none text-dark mx-4 fw-semibold" style="font-size: 20px;">О нас</a>
+        <a href="#" class="text-decoration-none text-dark mx-4 fw-semibold" style="font-size: 20px;">Коллекция</a>
+        <a href="#" class="text-decoration-none text-dark mx-4 fw-semibold" style="font-size: 20px;">Контакты</a>
+      </div>
+    </nav>
+
+    <!-- Заголовок с изображениями -->
+    <section class="title-container">
+      <div class="title-left position-relative">
+        <img src="images/111.jpg" style="width: 500px; height: 500px;" />
+      </div>
+      <div class="title-right position-relative">
+        <img src="images/122.jpg" style="width: 600px; height: 600px;"/>
+      </div>
+  <button class="order-button" id="openModalBtn">СДЕЛАТЬ ЗАКАЗ</button>
+
+<div id="orderModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>ХОТИТЕ СДЕЛАТЬ ЗАКАЗ?</h2>
+    <p>ЗАПОЛНИТЕ ФОРМУ НИЖЕ.</p>
+
+    <form id="orderForm">
+      <label for="name">ВАШЕ ИМЯ:</label>
+      <input type="text" id="name" name="name"><br><br>
+
+      <label for="phone">ТЕЛЕФОН:</label>
+      <input type="tel" id="phone" name="phone" placeholder="+7 (_) _--"><br><br>
+
+      <label for="email">E-MAIL:</label>
+      <input type="email" id="email" name="email"><br><br>
+
+      <button type="submit">ОТПРАВИТЬ</button>
+    </form>
+  </div>
+</div>
+</section>
+
+
+
+    <!-- Весна 2025 -->
+    <section>
+      <h5 class="text-center text-uppercase fw-bold mb-3">Весна 2025</h5>
+      <div class="collection-gallery">
+        <div>
+        <img src="images/1a.jpg" alt="Весна 1" class="malenkie"/>
+        <img src="images/1a.jpg" alt="Весна 2" class="srednie"/>
+        <img src="images/3a.jpg" alt="Весна 3" class="big"/>
+        <img src="images/2a.jpg" alt="Весна 4" class="srednie"/>
+        <img src="images/2a.jpg" alt="Весна 5" class="malenkie"/>
+      </div>
+      </div>
+      <div class="text-center mb-5">
+        <button class="btn btn-outline-custom">Посмотреть</button>
+      </div>
+    </section>
+
+    <!-- О нас -->
+    <section class="info-box">
+      <p>
+        <h6 class="onas fw-semibold mb-3" style="font-size: 19px;">О нас</h6>
+      </p>
+      <p>
+        Одна из важнейших задач нашей студии — создавать одежду, которая подчеркивает индивидуальность и элегантность.
+        Мы используем только натуральные материалы и современные технологии пошива.
+      </p>
+      <p>
+        Вдохновляясь природой и последними модными тенденциями, мы создаем коллекции, которые идеально подходят для любого случая.
+        Следите за новинками и будьте в тренде вместе с Falinda!
+      </p>
+    </section>
+
+   <section class="form-section">
+    <h6 class="text-center text-uppercase fw-semibold mb-3">Хотите сотрудничать с нами?</h6>
+    <h6 class="text-center text-uppercase" style="font-size: 16px;">Оставьте свой номер телефона и E-mail, и мы свяжемся свами!</h6>
+    <form id="collaborationForm">  <!-- Добавлен ID -->
+        <div class="row g-3 mb-3">
+            <div class="col-md-6">
+                <label for="name1">Имя</label>
+                <input type="text" id="name1" class="form-control" placeholder="Ваше имя" required />
+            </div>
+            <div class="col-md-6">
+                <label for="email1">Email</label>
+                <input type="email" id="email1" class="form-control" placeholder="Ваш email" required />
+            </div>
+        </div>
+        <button type="submit" class="btn btn-outline-custom">Отправить</button>
+    </form>
+</section>
+    <!-- Осень 2025 -->
+    <section class="mt-5">
+      <h5 class="text-center text-uppercase fw-bold mb-3">Осень 2025</h5>
+      <div class="collection-gallery">
+       <div>
+        <img src="images/1a.jpg" alt="Осень 1" class="malenkie"/>
+        <img src="images/1a.jpg" alt="Осень 2" class="srednie"/>
+        <img src="images/3a.jpg" alt="Осень 3" class="big"/>
+        <img src="images/2a.jpg" alt="Осень 4" class="srednie"/>
+        <img src="images/2a.jpg" alt="Осень 5" class="malenkie"/>
+      </div>
+      </div>
+      <div class="text-center mb-5">
+        <button class="btn btn-outline-custom">Посмотреть</button>
+      </div>
+    </section>
+
+    <!-- Форма заказа -->
+   <section class="form-section">
+    <h6 class="text-center text-uppercase fw-semibold mb-3">Хотите сделать заказ или остались вопросы?</h6>
+    <form id="contactForm">  <!-- Добавлен ID -->
+        <div class="row g-3 mb-3">
+            <div class="col-md-4">
+                <label for="name2">Имя</label>
+                <input type="text" id="name2" class="form-control" placeholder="Ваше имя" required />
+            </div>
+            <div class="col-md-4">
+                <label for="phone2">Телефон</label>
+                <input type="tel" id="phone2" class="form-control" placeholder="+7 (_) _--" required />
+            </div>
+            <div class="col-md-4">
+                <label for="email2">Email</label>
+                <input type="email" id="email2" class="form-control" placeholder="Ваш email" required />
+            </div>
+        </div>
+        <button type="submit" class="btn btn-outline-custom">Отправить</button>
+    </form>
+</section>
+
+
+
+    <!-- Контакты -->
+    <footer class="mt-5 text-center small text-muted">
+      <p>Телефон: +7 (999) 123-45-67</p>
+      <p>Email: info@falinda.ru</p>
+    </footer> 
+
+ 
+  <div id="successModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>СПАСИБО!</h2>
+    <p>МЫ СВЯЖЕМСЯ С ВАМИ В БЛИЖАЙШЕЕ ВРЕМЯ</p>
+  </div>
+</div>
+
+  <!-- Bootstrap JS -->
+  <script>src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"</script>
+  <script>
+  // Получаем элементы модальных окон
+const orderModal = document.getElementById("orderModal");
+const successModal = document.getElementById("successModal");
+
+// Получаем кнопку открытия модального окна (предполагается, что она у вас есть)
+const openModalBtn = document.getElementById("openModalBtn");
+
+// Получаем элементы закрытия модальных окон (крестики)
+const closeButtons = document.querySelectorAll(".close");
+
+// Получаем форму и кнопку отправки
+const orderForm = document.getElementById("orderForm") // Исправлено: ищем форму внутри .form-section
+const submitButton = orderForm.querySelector("button[type='submit']"); // Получаем кнопку отправки внутри формы
+
+// Функция для открытия модального окна
+function openModal(modal) {
+  modal.style.display = "block";
+}
+
+// Функция для закрытия модального окна
+function closeModal(modal) {
+  modal.style.display = "none";
+}
+
+// Обработчик открытия первого модального окна (если у вас есть кнопка "Сделать заказ")
+if (openModalBtn) { // Проверяем, существует ли кнопка открытия
+  openModalBtn.addEventListener("click", function() {
+    openModal(orderModal);
+  });
+}
+
+// Обработчики закрытия модальных окон (для крестиков)
+closeButtons.forEach(function(button) {
+  button.addEventListener("click", function() {
+    closeModal(button.closest(".modal")); // Закрываем ближайший родительский элемент с классом "modal"
+  });
+});
+
+// Обработчик отправки формы
+orderForm.addEventListener("submit", function(event) {
+  event.preventDefault(); // Предотвращаем отправку формы по умолчанию
+
+  //  Здесь можно добавить код для отправки данных формы на сервер (например, с использованием AJAX fetch)
+
+  // После успешной "отправки" (или просто для демонстрации):
+  closeModal(orderModal); // Закрываем окно заказа
+  openModal(successModal); // Открываем окно успеха
+});
+
+// Закрытие модального окна при клике вне его области
+window.addEventListener("click", function(event) {
+  if (event.target == orderModal) {
+    closeModal(orderModal);
+  } else if (event.target == successModal) {
+    closeModal(successModal);
+  }
+});
+const contactForm = document.getElementById("contactForm");
+if (contactForm) {
+    contactForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        // Здесь можно добавить код для отправки данных формы на сервер (например, AJAX)
+        openModal(successModal);  // Открываем окно "Спасибо"
+    });
+  }
+  const collaborationForm = document.getElementById("collaborationForm");
+if (collaborationForm) {
+    collaborationForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        // Здесь можно добавить код для отправки данных формы на сервер (например, AJAX)
+        openModal(successModal); // Открываем окно "Спасибо"
+    });
+}
+</script>
+</body>
+</html>
